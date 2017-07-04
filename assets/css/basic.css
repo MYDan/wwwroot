@@ -28,7 +28,7 @@ body {
 
 .page-head-line {
     font-size: 30px;
-    text-transform: uppercase;
+##mydan    text-transform: uppercase;
     color: #000;
     font-weight: 800;
     padding-bottom: 20px;
@@ -68,7 +68,7 @@ body {
     letter-spacing: 1px;
     font-weight: 900;
     padding-top: 25px;
-    text-transform:uppercase;
+##mydan    text-transform:uppercase;
 }
 
 .header-right {
