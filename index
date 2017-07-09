@@ -1,0 +1,92 @@
+﻿
+        <!-- PAGE_WRAPPER S -->
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">MYDan（蚂蚁蛋）运维助手</h1>
+                        <h1 class="page-subhead-line">蚂蚁蛋助手适用与以下四种模式</h1>
+
+                    </div>
+                </div>
+                
+
+            <div class="row">
+		<div class="col-md-12 col-sm-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            急救模式
+                        </div>
+                        <div class="panel-body">
+                            <p>安装蚂蚁蛋的<a href="manual_box.html">急救箱</a>可以提供一些工具集和机器管理平台。在急救模式下远程调用相关的使用的是ssh协议。<br>
+                            紧急模式适用于新环境中或者现有系统瘫痪agent调用失败的情况。<br>
+                      
+
+                         <br>
+                         <a href="" >点击查看详情</a>
+                         </p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+		<div class="col-md-12 col-sm-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            简单模式
+                        </div>
+                        <div class="panel-body">
+                            <p>简单模式是最简单的S/C 模式，要被操控的机器上需要安装蚂蚁蛋的agent。简单模式提供了一体化的平台<br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;一、&nbsp;&nbsp;代码发布，通过简单配置可以做发布任务<br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;二、&nbsp;&nbsp;监控，监控系统和业务情况<br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;三、&nbsp;&nbsp;值班系统，值班的切换和报警的升级<br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;四、&nbsp;&nbsp;订阅系统，蚂蚁蛋系统内部所有消息都会流过订阅系统，比如某个业务的cpu报警、或者某个业务的发布异常<br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;五、&nbsp;&nbsp;数据同步，系统提供快速分裂式的数据同步功能<br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;五、&nbsp;&nbsp;工具集，提供了一些运维中能用到的工具<br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                             <a href="" >点击查看详情</a>
+                           </p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+		<div class="col-md-12 col-sm-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            全量模式
+                        </div>
+                        <div class="panel-body">
+                            <p>全量模式下需要安装dashboard。同时dashboard需要对接公司的sso（单点登陆系统）［如果没有sso可以安装蚂蚁蛋sso］。在这个模式下可以进行用户权限管理。
+	                        <br>
+
+                             <a href="" >点击查看详情</a>
+			     </p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+                                                 
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            对话模式
+                        </div>
+                        <div class="panel-body">
+                            <p>
+	                            ...
+                            </p>
+                        </div>
+                  
+                    </div>
+                </div>
+            </div>
+
+
+ 

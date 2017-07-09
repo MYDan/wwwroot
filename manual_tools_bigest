@@ -1,0 +1,72 @@
+﻿               
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">tools -> bigest</h1>
+                        <h1 class="page-subhead-line">查找最大文件 </h1>
+
+                    </div>
+                </div>
+                
+                                                 
+
+                   <!-- /. ROW  -->
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            tools/bigest 使用说明
+                        </div>
+                        <div class="panel-body">
+                           
+
+                        <div style="margin: 5px 5px 0px; 
+                                              padding: 3px;
+                                              border: 1px dashed rgb(0, 160, 198); 
+                                              background-color: rgb(0,0,0);">
+                         <font style="background-color: rgb(0, 0, 0);"
+                                    color="#00ff00">
+
+                        
+                        [root@mydan dan]# ./tools/bigest
+                        &nbsp;&nbsp;&nbsp;&nbsp;    44.8K &nbsp;&nbsp; /home/work/mydan/dan/deploy<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    10.7K &nbsp;&nbsp; /home/work/mydan/dan/deploy/code<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     2.7K &nbsp;&nbsp; /home/work/mydan/dan/deploy/code/b.node<br>
+                        [root@mydan dan]#<br>
+                        [root@mydan dan]# ./tools/bigest /home/work/mydan<br>
+                        &nbsp;&nbsp;&nbsp;   139.4M &nbsp;&nbsp; /home/work/mydan/perl<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    96.4M &nbsp;&nbsp; /home/work/mydan/perl/lib<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    50.1M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    50.1M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl/5.24.0<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    23.0M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl/5.24.0/x86_64-linux-thread-multi<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    16.5M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl/5.24.0/x86_64-linux-thread-multi/auto<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     7.1M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl/5.24.0/x86_64-linux-thread-multi/auto/share<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     7.1M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl/5.24.0/x86_64-linux-thread-multi/auto/share/dist<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     7.1M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl/5.24.0/x86_64-linux-thread-multi/auto/share/dist/DBD-SQLite<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     6.6M &nbsp;&nbsp; /home/work/mydan/perl/lib/site_perl/5.24.0/x86_64-linux-thread-multi/auto/share/dist/DBD-SQLite/sqlite3.c<br>
+     
+     
+                         <br>
+                         </font>
+                         </div>
+                         
+                         
+                          <p>
+                          <br>
+                          参数说明：<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    要检测的路径，没有路径时检测的是当前路径<br>
+                           
+                          </p>
+
+                        </div>
+        
+                    </div>
+                </div>
+             </div>
+                    
+                    
+
+                    
+                
+                
+       

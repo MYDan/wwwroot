@@ -1,0 +1,113 @@
+﻿               
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">tools -> range</h1>
+                        <h1 class="page-subhead-line">操作对象描述，机器管理 </h1>
+
+                    </div>
+                </div>
+                
+                                                 
+
+                   <!-- /. ROW  -->
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            tools/range 使用说明
+                        </div>
+                        <div class="panel-body">
+                           
+
+                        <div style="margin: 5px 5px 0px; 
+                                              padding: 3px;
+                                              border: 1px dashed rgb(0, 160, 198); 
+                                              background-color: rgb(0,0,0);">
+                         <font style="background-color: rgb(0, 0, 0);"
+                                    color="#00ff00">
+                        
+                        
+                        [root@mydan tools]# ./range  -?<br>
+                        Usage:<br>
+                        &nbsp;&nbsp;&nbsp;   list:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Print range as a random list.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    $0 expr .. --list<br>
+                        &nbsp;&nbsp;&nbsp;   count:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    $0 expr .. --count<br>
+                        &nbsp;&nbsp;&nbsp;   count:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    $0 expr .. --show<br>
+                        &nbsp;&nbsp;&nbsp;   normalize:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Print a range expression<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    $0 expr ..<br>
+                        [root@mydan tools]# ./range  '10.10.10.{1~3}' -l<br>
+                        10.10.10.2<br>
+                        10.10.10.1<br>
+                        10.10.10.3<br>
+                        [root@mydan tools]# echo '10.10.10.1<br>
+                        > 10.10.10.3'|./range<br>
+                        10.10.10.{1,3}<br>
+                        [root@mydan tools]# ./range  '{==bar==*??==*}'  -l<br>
+                        10.10.10.1<br>
+                        10.10.10.2<br>
+                        10.10.10.4<br>
+                        10.10.10.3<br>
+                        [root@mydan tools]#<br>
+
+
+                    
+                         </font>
+                         </div>
+                         
+                         
+                          <p>
+                          <br>
+                          参数说明：<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --list 把range表达式列出来打印在屏幕<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --count 显示条数<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --show 更加range中的机器的域名进行分类输出<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    host1 host2 host3 .. 压缩成range表达式，或者可以 cat hostlist|./range<br>
+                           
+                           
+                           
+                           <br><br>
+                           节点管理<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;<a href="/manual_node.html" >结点管理</a>中把信息分成了四段，依次为：项目、属性、结点、状态。<br>
+                           例：
+                           &nbsp;&nbsp;获取所有项目：　range　'{??==*==*==*}'<br>
+                           &nbsp;&nbsp;获取所有结点：　range　'{==*==*??==*}'<br>
+                           &nbsp;&nbsp;获取项目foo的所有机器：　range　'{==foo==*??==*}'<br>
+                           &nbsp;&nbsp;获取项目foo和bar中状态是1的机器：　range　'{{foo,bar}==*==*==1}'<br>
+                           &nbsp;&nbsp;获取foo项目状态不是1的机器：　range　'{foo==*==*!!1}'<br>
+                           
+                           <br>
+                           插件<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;默认有两个插件list和node<br>
+                           &nbsp;node: range '{%%node}' 返回所有结点<br>
+                           &nbsp;list: 使用这个插件需要cd到存放机器列表的目录中，目录中存放各个项目的节点信息，文件后缀必须为 .list。 比如foo.list  bar.list ...<br>
+                           &nbsp;&nbsp;文件中每一行是一个节点(比如ip)，也可以是一个range表达式子(比如'10.10.10.{1~99}')。该目录下以.list为后缀的文件必须按照此规则，不然会报错。<br>
+                            &nbsp;&nbsp;   例: 获取所有list机器：range '{%%list}'<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;       获取foo.list文件中的节点: range '{%%list==foo}'<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;       获取foo.list和bar.list中的文件: range '{%%list=={foo,bar}}'<br>
+                                   
+                           <br>
+                           表达<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;加法（“，”号）： range node1,node2,node3<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;范围（“～”号）： range 'node{1~3}'<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;减法（“－”号）： range  'node{1~6},-node{4~6}'<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;正则（“－”号）：'node{1~3},host{1~3},&/node/'<br>
+                          
+                          </p>
+
+                        </div>
+        
+                    </div>
+                </div>
+             </div>
+                    
+                    
+
+                    
+                
+                
+       

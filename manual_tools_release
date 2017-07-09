@@ -1,0 +1,68 @@
+﻿               
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">tools -> release</h1>
+                        <h1 class="page-subhead-line">打包蚂蚁蛋客户端 </h1>
+
+                    </div>
+                </div>
+                
+                                                 
+
+                   <!-- /. ROW  -->
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            tools/release 使用说明
+                        </div>
+                        <div class="panel-body">
+                           
+
+                        <div style="margin: 5px 5px 0px; 
+                                              padding: 3px;
+                                              border: 1px dashed rgb(0, 160, 198); 
+                                              background-color: rgb(0,0,0);">
+                         <font style="background-color: rgb(0, 0, 0);"
+                                    color="#00ff00">
+                        
+                        
+                        [root@mydan tools]# ./release  -?<br>
+                        Usage:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         show pack list<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --pack v1.0<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         package<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --pack v1.0 --so Linux --arch x86<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         release<br>
+                        
+                        
+                  
+                         </font>
+                         </div>
+                         
+                         
+                          <p>
+                          <br>
+                          参数说明：<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    无参数 : 显示包列表<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --pack v1.0 把当前机器的蚂蚁蛋打包<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --pack v1.0 --so Linux --arch x86 把当前机器的蚂蚁蛋发布到 Linux.x86 提供给其他用户或机器在dashboard中下载<br>
+                   
+                           
+                           
+                          </p>
+
+                        </div>
+        
+                    </div>
+                </div>
+             </div>
+                    
+                    
+
+                    
+                
+                
+       

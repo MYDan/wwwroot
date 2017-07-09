@@ -1,0 +1,67 @@
+﻿               
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">tools -> access</h1>
+                        <h1 class="page-subhead-line">给远程机器添加或者删除用户 </h1>
+
+                    </div>
+                </div>
+                
+                                                 
+
+                   <!-- /. ROW  -->
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            tools/access 使用说明
+                        </div>
+                        <div class="panel-body">
+                           
+
+                        <div style="margin: 5px 5px 0px; 
+                                              padding: 3px;
+                                              border: 1px dashed rgb(0, 160, 198); 
+                                              background-color: rgb(0,0,0);">
+                         <font style="background-color: rgb(0, 0, 0);"
+                                    color="#00ff00">
+                        
+                        
+                        
+                        [root@mydan &nbsp; tools]# &nbsp; ./access  &nbsp; -?<br>
+                        Usage:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    $0 &nbsp; -r &nbsp; range &nbsp; [--delete] &nbsp; [--add] &nbsp; users1 &nbsp; user2 &nbsp;..<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Add &nbsp; or &nbsp; delete &nbsp; some &nbsp; users &nbsp; on &nbsp; the &nbsp; remote &nbsp; machine<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;    Only &nbsp; root &nbsp; users &nbsp; can &nbsp; execute<br>
+                        
+                         <br>
+                         </font>
+                         </div>
+                         
+                         
+                          <p>
+                          <br>
+                          参数说明：<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --range range : &nbsp;&nbsp;&nbsp;&nbsp;  <a href="/manual_tools_range.html" >range表达式</a><br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --add 或者 --delete 指名是要添加用户还是删除用户<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    user1 user2 .. 用户列表<br>
+                           
+                           
+                           <br><br>
+                           必须root才能运行。该工具通过agent来修改要被操作机器的/etc/passed、 /etc/shadow 、/etc/sudoers文件<br>
+                           
+                          </p>
+
+                        </div>
+        
+                    </div>
+                </div>
+             </div>
+                    
+                    
+
+                    
+                
+                
+       

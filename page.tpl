@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Bootstrap Advance Admin Template</title>
+    <title>mydam.org 蚂蚁蛋运维助手</title>
 
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -31,9 +31,8 @@
                 <a class="navbar-brand" href="index.html">MYDan</a>
             </div>
             
-            
-
             <div class="header-right">
+	            <a  href="http://www.mayidan.org"> <font color="#000">www.mayidan.org</font></a>        
 	            <a  href="https://github.com/mydan">  <i class="fa fa-github  fa-3x"></i> GitHub  </a>        
             </div>
         </nav>
@@ -45,6 +44,60 @@
                         <a class="active-menu" href="index.html"></i>首页</a>
                     </li>
 
+                     <li>
+                        <a href="#">使用手册<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="manual_tools.html"></i>tools</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>agent</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>bootstrap</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>collector</a>
+                            </li>
+                                  
+                            <li>
+                                <a href="null.html"></i>deploy</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>monitor</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>multicase</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>node</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>notify</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>oncall</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>project</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>subscribe</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>sync</a>
+                            </li>
+                            <li>
+                                <a href="null.html"></i>dashboard</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    
+                 
+                    
+                    
+
                 </ul>
 
             </div>
@@ -54,57 +107,8 @@
         <div id="page-wrapper">
         <!-- PAGE_WRAPPER S -->
                 
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="page-head-line">util -> conf -> pass</h1>
-                        <h1 class="page-subhead-line">批量虚拟终端 </h1>
-
-                    </div>
-                </div>
-                
-                                                 
-
-                   <!-- /. ROW  -->
-            <div class="row">
-	            
-                <div class="col-md-12 col-sm-12">
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            util/conf/pass 文件说明
-                        </div>
-                        <div class="panel-body">
-                            <p>密码文件例子如下：（如果需要修改密码文件路径请编辑<a href="/manual_config.html" >.config</a>）</p>
-
-                            <div style="margin: 5px 5px 0px;
-                                                padding: 3px;
-                                                border: 1px dashed rgb(0, 160, 198);
-                                                background-color: rgb(204,204,153);">
-                             <font style="background-color: rgb(204, 204, 153);" 
-                                                color="#000000">
-                            localhost{1~100}:&nbsp;&nbsp;#<a href="/manual_tools_range.html" >range表达式</a><br> 
-                            &nbsp;&nbsp;user1:&nbsp;"passwd1"<br>
-                            &nbsp;&nbsp;user2:&nbsp;"passwd2"<br>
-                            node1:<br>
-                            &nbsp;&nbsp;uu:&nbsp;pp<br>
-                            &nbsp;&nbsp;default:&nbsp;ppp &nbsp;&nbsp;&nbsp;&nbsp;#缺省密码<br>
-                            default:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#缺省配置<br>
-                            &nbsp;&nbsp;u1:&nbsp;p1<br>
-                            &nbsp;&nbsp;default:&nbsp;p<br>
-                            </font>
-                            </div> 
-
-                        </div>
-        
-                    </div>
-                </div>
-             </div>
-                    <!-- /. ROW  -->
-                    
-                    
-
-                    
-                
-                
+ 
+            PAGE_WRAPPER_CONTENT
        
              
         <!-- PAGE_WRAPPER E -->  

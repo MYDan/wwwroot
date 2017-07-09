@@ -1,0 +1,65 @@
+﻿               
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">tools -> keys</h1>
+                        <h1 class="page-subhead-line">把用户的公钥私钥同步到远程机器 </h1>
+
+                    </div>
+                </div>
+                
+                                                 
+
+                   <!-- /. ROW  -->
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            tools/keys 使用说明
+                        </div>
+                        <div class="panel-body">
+                           
+
+                        <div style="margin: 5px 5px 0px; 
+                                              padding: 3px;
+                                              border: 1px dashed rgb(0, 160, 198); 
+                                              background-color: rgb(0,0,0);">
+                         <font style="background-color: rgb(0, 0, 0);"
+                                    color="#00ff00">
+                        
+
+                        sage:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 -r range user1 user2 ..<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     Synchronize keys( id_rsa id_rsa.pub id_dsa id_dsa.pub authorized_keys ) to remote machines<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     Only root users can execute<br>
+
+                        
+                         <br>
+                         </font>
+                         </div>
+                         
+                         
+                          <p>
+                          <br>
+                          参数说明：<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --range range : &nbsp;&nbsp;&nbsp;&nbsp;  <a href="/manual_tools_range.html" >range表达式</a><br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    user1 user2 .. 用户列表<br>
+                           
+                           
+                           <br><br>
+                           必须root才能运行。该工具通过agent来同步id_rsa id_rsa.pub id_dsa id_dsa.pub authorized_keys文件到远程机器<br>
+                           
+                          </p>
+
+                        </div>
+        
+                    </div>
+                </div>
+             </div>
+                    
+                    
+
+                    
+                
+                
+       
