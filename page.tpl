@@ -51,7 +51,7 @@
                                 <a href="manual_tools.html"></i>tools</a>
                             </li>
                             <li>
-                                <a href="null.html"></i>agent</a>
+                                <a href="manual_agent.html"></i>agent</a>
                             </li>
                             <li>
                                 <a href="null.html"></i>bootstrap</a>

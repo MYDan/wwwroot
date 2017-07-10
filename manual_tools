@@ -1,13 +1,10 @@
-﻿
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="page-head-line">工具集</h1>
-                        <h1 class="page-subhead-line">box(急救箱)的工具集合是dan的子集，命令但参数基本相同，但是远程调用时候使用的协议不同</h1>
+﻿            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-head-line">工具集</h1>
+                    <h1 class="page-subhead-line">box(急救箱)的工具集合是dan的子集，命令但参数基本相同，但是远程调用时候使用的协议不同</h1>
 
-                    </div>
                 </div>
-                
-                                     
+            </div>
             <div class="row">
 	            
                 <div class="col-md-12 col-sm-12">
@@ -17,7 +14,7 @@
                         </div>
                         <div class="panel-body">
                             <p>
-                            
+                                <a href="/manual_tools_go.html" >go</a>: 密码应答登陆<br>
                                 <a href="/manual_tools_access.html" >access</a>: 给远程机器添加或者删除用户<br>
                                 <a href="/manual_tools_alarm.html" >alarm</a>: 以超时方式启动脚本<br>
                                 <a href="/manual_tools_bigest.html" >bigest</a>: 查找最大文件<br>
@@ -35,14 +32,8 @@
                                 <a href="/manual_tools_tcpserver.html" >tcpserver</a>: 把脚本输入输出绑定到tcp服务<br>
                                 <a href="/manual_tools_vssh.html" >vssh</a>: 虚拟shell，同时操作多个机器<br>
                                 <a href="/manual_tools_xtar.html" >xtar</a>: 数据和脚本压缩打包在一起<br>
-
-                            
                             </p>
-
-
-
                         </div>
-        
                     </div>
                 </div>
              </div>

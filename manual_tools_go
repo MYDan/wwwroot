@@ -2,7 +2,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-head-line">tools -> go</h1>
-                        <h1 class="page-subhead-line">批量虚拟终端 </h1>
+                        <h1 class="page-subhead-line">密码应答登陆 </h1>
 
                     </div>
                 </div>
@@ -18,81 +18,47 @@
                             tools/go 使用说明
                         </div>
                         <div class="panel-body">
-                            <p>方便远程登陆，密码问答。tools 下的go、mssh、vssh用同一个<a href="/manual_util_conf_pass.html" >密码文件</a></p>
+                           
 
-                            <div style="margin: 5px 5px 0px;
-                                                padding: 3px;
-                                                border: 1px dashed rgb(0, 160, 198);
-                                                background-color: rgb(204,204,153);">
-                             <font style="background-color: rgb(204, 204, 153);" 
-                                                color="#000000">
-                            localhost{1~100}:<br>
-                            &nbsp;&nbsp;user1:&nbsp;"passwd1"<br>
-                            &nbsp;&nbsp;user2:&nbsp;"passwd2"<br>
-                            node1:<br>
-                            &nbsp;&nbsp;uu:&nbsp;pp<br>
-                            &nbsp;&nbsp;default:&nbsp;ppp<br>
-                            default:<br>
-                            &nbsp;&nbsp;u1:&nbsp;p1<br>
-                            &nbsp;&nbsp;default:&nbsp;p<br>
-                            </font>
-                            </div> 
+                        <div style="margin: 5px 5px 0px; 
+                                              padding: 3px;
+                                              border: 1px dashed rgb(0, 160, 198); 
+                                              background-color: rgb(0,0,0);">
+                         <font style="background-color: rgb(0, 0, 0);"
+                                    color="#00ff00">
+                        
+                        
+                        
+                        [root@mydan tools]# ./go -?<br>
+                        Usage:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 host [user]<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --user dan host [user]<br>
+                        [root@mydan tools]#<br>
 
-
-<!--
-<div style="margin: 5px 5px 0px; 
-                      padding: 3px;
-                      border: 1px dashed rgb(0, 160, 198); 
-                      background-color: rgb(204,204,153);">
- <font style="background-color: rgb(204, 204, 153);"
-            color="#000000">
-
-
-        此处显示内容，比如#!/usr/bin/env bash（灰暗色适宜）
-
- <br>
- </font>
- </div>
-
-
-
-<div style="margin: 5px 5px 0px; 
-                      padding: 3px;
-                      border: 1px dashed rgb(0, 160, 198); 
-                      background-color: rgb(255,255,255);">
- <font style="background-color: rgb(255,255,255);"
-            color="#000000">
-
-
-        此处显示内容，比如#!/usr/bin/env bash（白色背景）
-
- <br>
- </font>
- </div>
-
-
-
-<div style="margin: 5px 5px 0px; 
-                      padding: 3px;
-                      border: 1px dashed rgb(0, 160, 198); 
-                      background-color: rgb(0,0,0);">
- <font style="background-color: rgb(0, 0, 0);"
-            color="#00ff00">
-
-
-        此处显示内容，比如#!/usr/bin/env bash（黑色背景）
-
- <br>
- </font>
- </div>
--->
+                 
+                         </font>
+                         </div>
+                         
+                         
+                          <p>
+                          <br>
+                          参数说明：<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --range range : &nbsp;&nbsp;&nbsp;&nbsp;  <a href="/manual_tools_range.html" >range表达式</a><br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --user 指定登陆用户<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    [user] 指定登陆后sudo的用户<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    host ： 如果输入的是完整的机器名或者ip，能解析通，将会使用这个host。如果输入的只是一半的内容，会在机器管理中搜索出能匹配上的机器让使用者选择。<br>
+                           
+                           
+                           <br><br>
+                           密码应答登陆。密码文件中描述机器和用户密码的对应关系。没有指定用户时候如果能找到可用的用户名和密码，将自动选定用户密码<br>
+                           
+                          </p>
 
                         </div>
         
                     </div>
                 </div>
              </div>
-                    <!-- /. ROW  -->
                     
                     
 
