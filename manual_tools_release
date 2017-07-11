@@ -34,7 +34,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         show pack list<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;     $0 --pack v1.0<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         package<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --pack v1.0 --so Linux --arch x86<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --release v1.0<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         release<br>
                         
                         
@@ -42,20 +42,19 @@
                          </font>
                          </div>
                          
-                         
                           <p>
                           <br>
                           参数说明：<br>
-                           &nbsp;&nbsp;&nbsp;&nbsp;    无参数 : 显示包列表<br>
-                           &nbsp;&nbsp;&nbsp;&nbsp;    --pack v1.0 把当前机器的蚂蚁蛋打包<br>
-                           &nbsp;&nbsp;&nbsp;&nbsp;    --pack v1.0 --so Linux --arch x86 把当前机器的蚂蚁蛋发布到 Linux.x86 提供给其他用户或机器在dashboard中下载<br>
-                   
-                           
+                           &nbsp;&nbsp;&nbsp;&nbsp;    无参数 : 显示临时包和各个版本包的情况<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --pack v1.0 把当前机器的蚂蚁蛋打包到临时目录<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --release v1.0 如果v1.0已经存在临时目录中否则打一个v1.0,然后发布包，供给其他用户或机器在dashboard中下载安装<br>
+
+                           <br>
+                           <br>
+                           发布的包是包含os和arch信息的，客户端安装的脚本会识别安装对应的包，如果没有供该系统使用的包将会安装失败。<br>
                            
                           </p>
-
                         </div>
-        
                     </div>
                 </div>
              </div>

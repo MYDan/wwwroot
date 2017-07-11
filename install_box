@@ -1,0 +1,39 @@
+﻿            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-head-line">急救模式安装手册</h1>
+
+                </div>
+            </div>
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            工具集&nbsp;&nbsp;{dan,box}/tools/目录下的工具
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <a href="/manual_tools_go.html" >go</a>: 密码应答登陆<br>
+                                <a href="/manual_tools_access.html" >access</a>: 给远程机器添加或者删除用户<br>
+                                <a href="/manual_tools_alarm.html" >alarm</a>: 以超时方式启动脚本<br>
+                                <a href="/manual_tools_bigest.html" >bigest</a>: 查找最大文件<br>
+                                <a href="/manual_tools_config.html" >config</a>: 查看蚂蚁蛋全局配置<br>
+                                <a href="/manual_tools_keys.html" >keys</a>: 把用户的公钥私钥同步到远程机器<br>
+                                <a href="/manual_tools_load.html" >load</a>: 从远程机器上下载文件<br>
+                                <a href="/manual_tools_mcmd.html" >mcmd</a>: 批量执行命令<br>
+                                <a href="/manual_tools_mrsync.html" >mrsync</a>: 批量同步数据<br>
+                                <a href="/manual_tools_mssh.html" >mssh</a>: 批量执行ssh命令<br>
+                                <a href="/manual_tools_range.html" >range</a>: 操作对象描述，机器管理<br>
+                                <a href="/manual_tools_rcall.html" >rcall</a>: 远程调用<br>
+                                <a href="/manual_tools_release.html" >release</a>: 打包蚂蚁蛋客户端<br>
+                                <a href="/manual_tools_shell.html" >shell</a>: 获取远程机器反弹shell<br>
+                                <a href="/manual_tools_tai64nlocal.html" >tai64nlocal</a>: 查看tai64格式日志<br>
+                                <a href="/manual_tools_tcpserver.html" >tcpserver</a>: 把脚本输入输出绑定到tcp服务<br>
+                                <a href="/manual_tools_vssh.html" >vssh</a>: 虚拟shell，同时操作多个机器<br>
+                                <a href="/manual_tools_xtar.html" >xtar</a>: 数据和脚本压缩打包在一起<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          

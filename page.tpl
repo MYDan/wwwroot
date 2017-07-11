@@ -44,7 +44,23 @@
                         <a class="active-menu" href="index.html"></i>首页</a>
                     </li>
 
-                     <li>
+                    <li>
+                        <a href="#">安装手册<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="install_box.html"></i>急救模式</a>
+                            </li>
+                            <li>
+                                <a href="install_dan.html"></i>简单模式</a>
+                            </li>
+                            <li>
+                                <a href="install_full.html"></i>全量模式</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li>
                         <a href="#">使用手册<span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level">
                             <li>
