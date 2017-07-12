@@ -28,12 +28,16 @@
                                     color="#00ff00">
                         
                         
+
                         [root@mydan tools]# ./shell -?<br>
                         Usage:<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 -host host<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --host host<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        get a shell from remote machine<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --host host --listen 9999<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     $0 --host host --listen 9999 [--addr 10.10.10.1]\<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          [--user user(default `logname`)] [--sudo sudoer]<br>
                         [root@mydan tools]#<br>
-                        
+
                      
                          </font>
                          </div>
@@ -43,7 +47,11 @@
                           <br>
                           参数说明：<br>
                            &nbsp;&nbsp;&nbsp;&nbsp;    --host host : 指名远程ip<br>
-      
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --listen port : 把shell反弹到指定端口<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --addr host : 把shell反弹到指定ip<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --user user : 用户，默认为`logname`，不指定sudo的情况下反弹该用户shell<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --sudo sudoer : sudo 到指定用户，会反弹该用户的shell<br>
+
                          
                           </p>
 

@@ -69,6 +69,11 @@
                             <li>
                                 <a href="manual_agent.html"></i>agent</a>
                             </li>
+                                                        
+                            <li>
+                                <a href="manual_dashboard.html"></i>dashboard</a>
+                            </li>
+                            <!--
                             <li>
                                 <a href="null.html"></i>bootstrap</a>
                             </li>
@@ -103,9 +108,8 @@
                             <li>
                                 <a href="null.html"></i>sync</a>
                             </li>
-                            <li>
-                                <a href="null.html"></i>dashboard</a>
-                            </li>
+                            -->
+
                         </ul>
                     </li>
                     

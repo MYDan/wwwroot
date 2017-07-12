@@ -49,7 +49,7 @@
                            
                            
                            <br><br>
-                           必须root才能运行。该工具通过agent来修改要被操作机器的/etc/passed、 /etc/shadow 、/etc/sudoers文件<br>
+                           必须root才能运行。该工具通过agent来修改要被操作机器的/etc/passed、 /etc/shadow 、/etc/sudoers、/etc/group 文件<br>
                            
                           </p>
 
