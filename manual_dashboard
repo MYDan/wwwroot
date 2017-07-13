@@ -67,7 +67,8 @@
                                
                                <br><br><br><br>
                                另外：<br>
-                               /home/work/mydan/dashboard/config.yml中的serveraddr 需要指名服务的地址，这个地址在用户在dashboard页面直接获取连接安装agent时候用到。<br>
+                               在dashboard中的安装agent页面、设置token页面、查看hosts页面使用到了服务器地址这个信息，如果dashboard是用nginx做负载均衡的情况下，请在nginx的location中添加proxy_set_header Host $host:$server_port; , 否则sso跳转回来时会出错，在页面请求安装脚本也会出错。<br> 
+                               dashboard管理员需要使用/home/work/mydan/dan/tools/release工具把客户端代码打包发布到dashboard中供agent和client安装。<br>
                                对于普通用户在安装了客户端后需要修改/home/work/mydan/dan/.config , 把agent配置下被注释掉的role: client，把注释去了，标明自己当前是clent的角色。还需要把.config中的api地址修成dashboard的地址。<br>
                               
                             </p>

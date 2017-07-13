@@ -45,7 +45,7 @@
                     </li>
 
                     <li>
-                        <a href="#">安装手册<span class="fa arrow"></span></a>
+                        <a href="#">安装&入门<span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level">
                             <li>
                                 <a href="install_box.html"></i>急救模式</a>
@@ -55,6 +55,9 @@
                             </li>
                             <li>
                                 <a href="install_full.html"></i>全量模式</a>
+                            </li>
+                            <li>
+                                <a href="install_pkg.html"></i>极速安装</a>
                             </li>
                         </ul>
                     </li>
