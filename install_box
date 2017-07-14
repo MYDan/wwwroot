@@ -4,33 +4,172 @@
 
                 </div>
             </div>
+            
+            
+            
             <div class="row">
 	            
                 <div class="col-md-12 col-sm-12">
                     <div class="panel panel-info">
                         <div class="panel-heading">
-                            工具集&nbsp;&nbsp;{dan,box}/tools/目录下的工具
+                            简介
                         </div>
                         <div class="panel-body">
                             <p>
-                                <a href="/manual_tools_go.html" >go</a>: 密码应答登陆<br>
-                                <a href="/manual_tools_access.html" >access</a>: 给远程机器添加或者删除用户<br>
-                                <a href="/manual_tools_alarm.html" >alarm</a>: 以超时方式启动脚本<br>
-                                <a href="/manual_tools_bigest.html" >bigest</a>: 查找最大文件<br>
-                                <a href="/manual_tools_config.html" >config</a>: 查看蚂蚁蛋全局配置<br>
-                                <a href="/manual_tools_keys.html" >keys</a>: 把用户的公钥私钥同步到远程机器<br>
-                                <a href="/manual_tools_load.html" >load</a>: 从远程机器上下载文件<br>
-                                <a href="/manual_tools_mcmd.html" >mcmd</a>: 批量执行命令<br>
-                                <a href="/manual_tools_mrsync.html" >mrsync</a>: 批量同步数据<br>
-                                <a href="/manual_tools_mssh.html" >mssh</a>: 批量执行ssh命令<br>
-                                <a href="/manual_tools_range.html" >range</a>: 操作对象描述，机器管理<br>
-                                <a href="/manual_tools_rcall.html" >rcall</a>: 远程调用<br>
-                                <a href="/manual_tools_release.html" >release</a>: 打包蚂蚁蛋客户端<br>
-                                <a href="/manual_tools_shell.html" >shell</a>: 获取远程机器反弹shell<br>
-                                <a href="/manual_tools_tai64nlocal.html" >tai64nlocal</a>: 查看tai64格式日志<br>
-                                <a href="/manual_tools_tcpserver.html" >tcpserver</a>: 把脚本输入输出绑定到tcp服务<br>
-                                <a href="/manual_tools_vssh.html" >vssh</a>: 虚拟shell，同时操作多个机器<br>
-                                <a href="/manual_tools_xtar.html" >xtar</a>: 数据和脚本压缩打包在一起<br>
+
+                            首先，所有的蚂蚁蛋项目都需要安装在目录名为mydan下。如：/home/work/mydan。<br>
+                            如果仅是使用急救箱，可以不用单独变异perl。单独变异是在简单模式和全量模式中，以为需要在所有机器上方便的安装agent，才需要去编译。<br>
+                            在mac系统中perl的模块比较齐全，安装过程一般不会出现问题。在centos和ubuntu下安装会花一些时间使得模块都正常安装。<br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          
+
+            
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            安装
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                            
+                            
+                                           
+                            以下以安装centos的/home/work/mydan目录下为例。安装在系统默认perl。<br>    
+                            （如果系统中的perl版本太低，可能需要处理安装过程中的许多错误，可以直接下载<a href="perl.tar.gz"></i>编译好的perl</a>，解压到mydan目录下，然后吧下面perl相关的命令改成/home/work/mydan/perl/bin/per）<br><br>         
+                                                        
+                            mkdir -p  /home/work/mydan<br>
+                            cd /home/work/mydan<br>
+                            git clone https://github.com/mydan/mayi.git<br>
+                            cd mayi<br>
+                            
+                            perl Makefile.PL<br>
+                            make<br>
+                            make install box=1 def=1<br>
+                            
+                            <div style="margin: 5px 5px 0px;
+                                                padding: 3px;
+                                                border: 1px dashed rgb(0, 160, 198);
+                                                background-color: rgb(204,204,153);">
+                             <font style="background-color: rgb(204, 204, 153);" 
+                                                color="#000000">
+                    
+                            
+                            错误：<br>
+                            Can't locate ExtUtils/MakeMaker.pm in @INC (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at Makefile.PL line 4.<br>
+                            BEGIN failed--compilation aborted at Makefile.PL line 4.<br>
+                            
+          
+                            <br>
+                            解决办法：<br>
+                            cd  /tmp<br>
+                            wget https://cpan.metacpan.org/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-7.30.tar.gz<br>
+                            tar -zxvf  ExtUtils-MakeMaker-7.30.tar.gz<br>
+                            cd ExtUtils-MakeMaker-7.30<br>
+                            perl Makefile.PL<br>
+                            make<br>
+                            make install<br>
+                            
+                            
+                            </font>
+                            </div> 
+                            
+                            
+
+                            <div style="margin: 5px 5px 0px;
+                                                padding: 3px;
+                                                border: 1px dashed rgb(0, 160, 198);
+                                                background-color: rgb(204,204,153);">
+                             <font style="background-color: rgb(204, 204, 153);" 
+                                                color="#000000">
+                    
+                            
+                            
+                            错误：<br>
+
+                            "/usr/bin/perl" "-Iblib/arch" "-Iblib/lib" INSTALL.PL INSTALL<br>
+                            Use of uninitialized value $cpan in -f at INSTALL.PL line 18.<br>
+                            no find cpan at INSTALL.PL line 18.<br>
+                            make: *** [INSTALL] Error 2<br>
+                            
+                            <br>
+                            解决办法：<br>
+                            
+                            cd /tmp<br>
+                            wget https://cpan.metacpan.org/authors/id/A/AN/ANDK/CPAN-2.16.tar.gz<br>
+                            
+                            tar -zxvf CPAN-2.16.tar.gz<br>
+                            cd CPAN-2.16<br>
+                            perl Makefile.PL<br>
+                            make<br>
+                            make install<br>                      
+                            
+                            
+                            </font>
+                            </div> 
+                             
+                            
+              
+                            
+                            <div style="margin: 5px 5px 0px;
+                                                padding: 3px;
+                                                border: 1px dashed rgb(0, 160, 198);
+                                                background-color: rgb(204,204,153);">
+                             <font style="background-color: rgb(204, 204, 153);" 
+                                                color="#000000">
+
+                            错误：<br>                            
+                            Warning: prerequisite Test::Simple 0.90 not found.<br>
+                            ExtUtils::MM_Unix::tool_xsubpp : Can't find xsubpp at /usr/share/perl5/ExtUtils/MM_Unix.pm line 3769.<br>
+                            Warning: No success on command[/usr/bin/perl Makefile.PL]
+                            &nbsp;&nbsp;  TIMB/DBI-1.636.tar.gz<br>
+                            &nbsp;&nbsp;  /usr/bin/perl Makefile.PL -- NOT OK<br>
+                            /usr/bin/cpan install DBI fail: at INSTALL.PL line 23.<br>
+                            make: *** [INSTALL] Error 1<br>
+                            
+                            <br>
+                            解决办法：<br>
+                            yum install perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker<br>
+                            
+                            
+                            </font>
+                            </div> 
+
+                              
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          
+
+
+            
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            简单使用
+                        </div>
+                        <div class="panel-body">
+                            <p>
+
+                            修改  /home/work/mydan/etc/util/conf/pass 写入密码：<br><br>
+                            
+                            如：<br>
+                            10.10.10.1:<br>
+                            &nbsp;&nbsp;  mydan: "123456"<br><br>
+                            
+                            ./vssh  -r 10.10.12.12 -u nices  #测试批量操作工具<br>
+                            ./go 10.10.12.12 ＃测试密码应答登陆<br> 
+
                             </p>
                         </div>
                     </div>
