@@ -42,7 +42,7 @@
                             
                                            
                             以下以安装centos的/home/work/mydan目录下为例。安装在系统默认perl。<br>    
-                            （如果系统中的perl版本太低，可能需要处理安装过程中的许多错误，可以直接下载<a href="perl.tar.gz"></i>编译好的perl</a>，解压到mydan目录下，然后吧下面perl相关的命令改成/home/work/mydan/perl/bin/per）<br><br>         
+                            （如果系统中的perl版本太低，可能需要处理安装过程中的许多错误，可以直接下载<a href="https://pan.baidu.com/s/1o81CqcM" target="_blank" >编译好的perl</a>，解压到mydan目录下，然后把下面perl相关的命令改成/home/work/mydan/perl/bin/perl）<br><br>         
                                                         
                             mkdir -p  /home/work/mydan<br>
                             cd /home/work/mydan<br>
