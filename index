@@ -17,12 +17,12 @@
                             急救模式
                         </div>
                         <div class="panel-body">
-                            <p>安装蚂蚁蛋的<a href="manual_box.html">急救箱</a>可以提供一些工具集和机器管理平台。在急救模式下远程调用相关的使用的是ssh协议。<br>
+                            <p>安装蚂蚁蛋的急救箱可以提供一些工具集和机器管理平台。在急救模式下远程调用相关的使用的是ssh协议。<br>
                             紧急模式适用于新环境中或者现有系统瘫痪agent调用失败的情况。<br>
                       
 
                          <br>
-                         <a href="" >点击查看详情</a>
+                         <a href="install_box.html" >点击安装</a>
                          </p>
                         </div>
                 
@@ -45,7 +45,7 @@
                              &nbsp;&nbsp;&nbsp;&nbsp;五、&nbsp;&nbsp;数据同步，系统提供快速分裂式的数据同步功能<br>
                              &nbsp;&nbsp;&nbsp;&nbsp;五、&nbsp;&nbsp;工具集，提供了一些运维中能用到的工具<br>
                              &nbsp;&nbsp;&nbsp;&nbsp;...<br>
-                             <a href="" >点击查看详情</a>
+                             <a href="install_dan.html" >点击安装</a>
                            </p>
                         </div>
                 
@@ -63,7 +63,7 @@
                             <p>全量模式下需要安装dashboard。同时dashboard需要对接公司的sso（单点登陆系统）［如果没有sso可以安装蚂蚁蛋sso］。在这个模式下可以进行用户权限管理。
 	                        <br>
 
-                             <a href="" >点击查看详情</a>
+                             <a href="install_full.html" >点击安装</a>
 			     </p>
                         </div>
                 

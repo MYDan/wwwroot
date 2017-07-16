@@ -30,8 +30,12 @@
                         
                         [root@mydan tools]# ./mrsync -?<br>
                         Usage:<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     $0 [--src src-range] --dst dst-range --sp src-path [--dp dst-path] \<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;        [--timeout seconds] [--max number] [--retry number]<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     $0 [--src src-range(default `hostname`)] --dst dst-range --sp src-path [--dp dst-path] \<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;        [--timeout seconds(default 300)]<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;        [--max number(default 128)]<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;        [--retry number(default 2)]<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;        [--gave number(default 3)]<br><br>
+                                                                                                
                         &nbsp;&nbsp;&nbsp;&nbsp;        The following parameters are valid only in box<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;        [--nice number]<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;        [rsync options]<br>
@@ -53,10 +57,11 @@
                            &nbsp;&nbsp;&nbsp;&nbsp;    --dp dst-path : &nbsp;&nbsp;&nbsp;&nbsp;  目标路径，如果是在急救箱可以是目录<br>
                            
                     
-                           &nbsp;&nbsp;&nbsp;&nbsp;    --timeout 超时，单位为妙<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --timeout 超时默认300秒，单位为秒<br>
                            &nbsp;&nbsp;&nbsp;&nbsp;    --max 并发数，默认128<br>
                            
                            &nbsp;&nbsp;&nbsp;&nbsp;    --retry 对一台机器来说，同步失败后重试次数，默认重试2次<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;    --gave 对一台机器来说，一个时间点运行多少个机器重它上面拷贝数据。默认3<br>
                            <br>
                            box<br>
                            &nbsp;&nbsp;&nbsp;&nbsp;    --nice 指定rsync时nice值<br>
