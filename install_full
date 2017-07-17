@@ -92,7 +92,7 @@
                             添加key：<br>
                             cd /home/work/mydan/etc/agent/auth<br>
                             ssh-keygen   #第一次提问的时机写上要生成key的名字 如： foo ,然后一直按回车。<br>
-                            mv foo foo.key #当前目录下生成两个文件 foo 和foo.pub ,把foo重命名成foo.key<br>
+                            mv foo foo.key #当前目录下生成两个文件 foo 和foo.pub ,把foo重命名成foo.key<br><br>
                              
     
                             
@@ -100,6 +100,8 @@
                             安装dashboard：<br>
                             cd /home/work/mydan<br>
                             git clone http://github.com/mydan/dashboard.git<br>
+                            cd dashboard<br>
+                            /home/work/mydan/perl/bin/perl  Makefile.PL<br>
                             make<br>
                             make test<br>
                             make install<br><br>
