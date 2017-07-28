@@ -117,6 +117,10 @@
                         <a href="QandA.html">Q&A</a>
                      </li>
 
+                     <li>
+                        <a href="chat.html">讨论区</a>
+                     </li>
+
                 </ul>
 
             </div>

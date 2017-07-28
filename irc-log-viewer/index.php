@@ -173,7 +173,7 @@ date_default_timezone_set("Asia/Shanghai");
 echo "Current Server Time: ".date("H:i")." (Asia/Shanghai)";
 
 if ($showoverview) {
-	echo "<h1>MYDan IRC Logs</h1>";
+	echo "<h1><a href='/'>MYDan</a> IRC Logs</h1>";
 	$month_index = 0;
 	
 	while(1) {
@@ -205,7 +205,7 @@ if ($showoverview) {
 	}
 } else {
 ?>
-<h1>MYDan IRC Logs</h1>
+<h1><a href='/'>MYDan</a> IRC Logs</h1>
 <h2><?php echo $year."/".$month."/".$day; ?></h2>
 <h3>Timezone: Asia/Shanghai</h3>
 
