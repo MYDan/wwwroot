@@ -1,0 +1,31 @@
+1371613980 Q * tonsofpcs Max SendQ exceeded
+1371618720 Q * jucar Ping timeout: 264 seconds
+1371627180 J * s3bastian ~chatzilla@141.244.21.193
+1371631380 J * jucar ~jucar@217.112.101.124
+1371631440 Q * jucar1 Ping timeout: 276 seconds
+1371636240 J * philippejadin c1bfe4fe@gateway/web/cgi-irc/kiwiirc.com/ip.193.191.228.254
+1371637380 Q * philippejadin Quit: http://www.kiwiirc.com/ - A hand crafted IRC client
+1371642600 M * Bertl morning folks!
+1371643740 M * s3bastian hello!
+1371643740 M * s3bastian long night again? ;)
+1371643920 M * Bertl as usual!
+1371644820 M * s3bastian and how far did you get with the zedboard?
+1371645900 M * Bertl well, I got the development environment up and running and I managed to re-build the demo project
+1371645960 M * Bertl I'm now trying to reduce the build process to the minimum required steps to build something useable
+1371646380 M * s3bastian nice
+1371646980 M * Bertl ah, I see, well, I'm not yet connecting via jtag to the board
+1371647040 M * Bertl but I will check this out soon as well, so I'll try to answer that when I get there
+1371649500 M * s3bastian great
+1371651420 J * philippejadin c1bfe4f2@gateway/web/freenode/ip.193.191.228.242
+1371652380 Q * philippejadin Quit: Page closed
+1371655020 M * Bertl okay, jtag via digilent via ftdi is working :)
+1371655080 M * Bertl I have to run in a few minutes, but I describe the process here, will write something up for the wiki later
+1371655440 M * Bertl after that, the following should work:
+1371655440 M * Bertl xmd
+1371655440 M * Bertl connect mb mdm -cable type xilinx_plugin modulename digilent_plugin
+1371655560 M * Bertl http://pastebin.com/SNrfBqb9
+1371655560 M * Bertl of course, the default image has no mdm IP
+1371656040 M * s3bastian great!
+1371660300 Q * s3bastian 
+1371663360 Q * tonsofpcs Changing host
+1371663360 J * tonsofpcs ~tonsofpcs@rivendell/member/tonsofpcs
