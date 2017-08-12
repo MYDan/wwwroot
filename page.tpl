@@ -73,20 +73,20 @@
                             <li>
                                 <a href="manual_dashboard.html"></i>dashboard</a>
                             </li>
+                            <li>
+                                <a href="manual_notify.html"></i>notify</a>
+                            </li>
+                            <li>
+                                <a href="manual_oncall.html"></i>oncall</a>
+                            </li>
+                            <li>
+                                <a href="manual_subscribe.html"></i>subscribe</a>
+                            </li>
+                            <li>
+                                <a href="manual_deploy.html"></i>deploy</a>
+                            </li>
+
                             <!--
-                            <li>
-                                <a href="null.html"></i>bootstrap</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>collector</a>
-                            </li>
-                                  
-                            <li>
-                                <a href="null.html"></i>deploy</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>monitor</a>
-                            </li>
                             <li>
                                 <a href="null.html"></i>multicase</a>
                             </li>

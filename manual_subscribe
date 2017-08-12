@@ -1,0 +1,56 @@
+﻿            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-head-line">subscribe</h1>
+                    <h1 class="page-subhead-line">订阅模块subscribe</h1>
+
+                </div>
+            </div>
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            subscribe在mydan的位置
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                所有需要通知用户的事件都通过subscribe这个模块，包括mydan内部的信息，subscribe中提供工具来让用户去订阅某个事件。比如用户user1订阅project1项目发布过程中发布stuck的情况，同时要指定订阅级别，该级别和notify中的级别是一个问题。比如订阅级别是3，则当project1项目在发布过程中stuck了，就会邮件和短信通知用户user1。
+                            </p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+             </div>
+          
+
+
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            subscribe使用相关
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                subscribe提供了两个工具<br><br>
+
+                                1.mydan/dan/subscribe/bin/subscribe<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; 该工具没有参数的情况下会列出所有已经订阅的信息。 --add和--del分别为添加订阅和取消订阅。--name：事件名称，--attr:事件中的某个属性，--user:用户，--level：级别<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;如：./subscribe  --name mydan_deploy_stuck  -add --attr apps.test --user user1 -level 3<br><br><br>
+                                2.mydan/dan/subscribe/bin/input<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; 往订阅系统写入消息<br><br>
+                                
+                                &nbsp;&nbsp;&nbsp;&nbsp; 如：./input abc : 写入消息abc，name为unkown,attr为unkown<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; 如：./input abc g1: 写入消息abc，name为g1,attr为unkown<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; 如：./input abc g1 a1: 写入消息abc，name为g1,attr为a1<br><br>
+                               
+                            </p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+             </div>
+          
