@@ -38,7 +38,7 @@
 
                                 1.mydan/dan/subscribe/bin/subscribe<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp; 该工具没有参数的情况下会列出所有已经订阅的信息。 --add和--del分别为添加订阅和取消订阅。--name：事件名称，--attr:事件中的某个属性，--user:用户，--level：级别<br><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;如：./subscribe  --name mydan_deploy_stuck  -add --attr apps.test --user user1 -level 3<br><br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;如：./subscribe  --name apps.test  -add --attr mydan_deploy_stuck --user user1 -level 3<br><br><br>
                                 2.mydan/dan/subscribe/bin/input<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp; 往订阅系统写入消息<br><br>
                                 
