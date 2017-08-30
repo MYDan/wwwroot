@@ -45,7 +45,7 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp; 在 mydan/dan/.config中对插件和级别进行绑定, 默认是第一级是邮件，第二级是短信，第三级是邮件和短信。<br><br>
 
                                 3.配置个人联系信息<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp; 在 mydan/etc/util/conf/contact 这个文件中配置所有用户的联系方式，名字要喝插名称对应上<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; 在 mydan/etc/util/conf/contact 这个文件中配置所有用户的联系方式，名字要和插件名称对应上<br><br>
                                 
                                 4.配置组信息<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp; 在 mydan/etc/util/conf/team 配置组信息<br><br>
