@@ -48,6 +48,9 @@
                         <a href="#">安装手册<span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level">
                             <li>
+                                <a href="install_quickstart.html"></i>Quick Start</a>
+                            </li>
+                            <li>
                                 <a href="install_box.html"></i>急救模式</a>
                             </li>
                             <li>
@@ -119,6 +122,9 @@
 
                      <li>
                         <a href="chat.html">讨论区</a>
+                     </li>
+                     <li>
+                        <a href="pay.html">打赏</a>
                      </li>
 
                 </ul>

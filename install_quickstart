@@ -1,0 +1,178 @@
+﻿            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-head-line">QuickStart - 快速尝试mydan服务</h1>
+
+                </div>
+            </div>
+            
+            
+            
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            启动服务
+                        </div>
+                        <div class="panel-body">
+                            <p>
+
+			    docker pull mydan/mydan;<br>
+			    docker run -it -p 5555:5555 -p 8080:8080  -e SMTP_ADDR=127.0.0.1 sh /entrypoint.sh<br>
+
+                            <br> 
+			    注:<br>
+			    5555端口为dashboard端口<br>
+			    8080端口为sso端口<br>
+                            环境变量SMTP_ADDR，要配置一个可用的smtp地址，否则sso注册时无法发送邮件(如果只为测试可以不写，下文会提及)<br>
+			    可以添加  -v /my/path/auth:/home/work/mydan/etc/agent/auth 保存固定的公私钥<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          
+
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            绑定域名
+                        </div>
+                        <div class="panel-body">
+                            <p>
+			    如果docker运行的机器不是本地电脑，需要绑定hosts文件， sso.mydan.org 和dashboard.mydan.org指向docker机器<br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          
+            
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            sso中注册账号
+                        </div>
+                        <div class="panel-body">
+                            <p>
+			    <img src="assets/img/quickstart/sso_zhuce/zhuce.png"  alt="注册页面"  height="466" width="1000" />
+			    正常情况下，会往注册邮箱里发一个修改密码的链接。如果docker启动时SMTP是错误的收不到邮件，可以在docker的输出日志中看到该链接,通过该链接来完成注册即可。<br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+ 
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            安装
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                            
+                            
+                                           
+                            以下以安装centos的/home/work/mydan目录下为例。<br><br>
+                            
+                            1.安装编译perl<br>
+                            
+
+                            
+                             wget http://www.cpan.org/src/5.0/perl-5.24.0.tar.gz<br>
+                             tar -zxvf perl-5.24.0.tar.gz<br>
+                             cd perl-5.24.0<br>
+                             
+                             ./Configure -des -Dprefix=/home/work/mydan/perl  -Dusethreads -Uinstalluserbinperl<br>
+                             make<br>
+                             make test<br>
+                             make install<br>
+                             
+                             
+                            <div style="margin: 5px 5px 0px;
+                                                padding: 3px;
+                                                border: 1px dashed rgb(0, 160, 198);
+                                                background-color: rgb(204,204,153);">
+                             <font style="background-color: rgb(204, 204, 153);" 
+                                                color="#000000"> 
+                            自己编译的perl需要安装比较多的木块，可以直接下载<a href="https://pan.baidu.com/s/1o81CqcM" target="_blank">编译好的perl</a>，解压到mydan目录下<br>                
+                            </font>
+                            </div> 
+                            <br>
+                            
+                             
+                             
+                             
+                             安装mydan的dan，box，def<br>
+
+                             cd /home/work/mydan<br>
+                             git clone https://github.com/mydan/mayi.git<br>
+                             cd mayi<br>
+                             /home/work/mydan/perl/bin/perl  Makefile.PL<br>
+                             make<br>
+                             make install dan=1 box=1 def=1<br>
+                             
+                             
+                            <div style="margin: 5px 5px 0px;
+                                                padding: 3px;
+                                                border: 1px dashed rgb(0, 160, 198);
+                                                background-color: rgb(204,204,153);">
+                             <font style="background-color: rgb(204, 204, 153);" 
+                                                color="#000000"> 
+                            如果安装过程中出现异常，可以参看是否和<a href="install_box.html"></i>急救模式</a>中的错误一样，并安装对应的处理方式解决。<br>                
+                            </font>
+                            </div> 
+                            <br>
+                                                         
+                             
+                             
+                             
+                             添加key：<br>
+                             cd /home/work/mydan/etc/agent/auth<br>
+                             ssh-keygen   #第一次提问的时机写上要生成key的名字 如： foo ,然后一直按回车。<br>
+                             mv foo foo.key #当前目录下生成两个文件 foo 和foo.pub ,把foo重命名成foo.key<br>
+                             
+                             /home/work/mydan/dan/bootstrap/bin/bootstrap  --install <br>
+                             安装是把配置文件放到crond中，一分钟后服务会启动，有mydan相关的进程<br>
+
+                              
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          
+
+
+            
+            <div class="row">
+	            
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            简单使用
+                        </div>
+                        <div class="panel-body">
+                            <p>
+
+                             
+                             /home/work/mydan/dan/tools/rcall  -r 127.0.0.1 exec pwd #调用127.0.0.1机器上的pwd命令<br>
+                             /home/work/mydan/dan/tools/vssh  -r 127.0.0.1 ＃虚拟登陆127.0.0.1<br>
+                             
+                             需要在所有要控制的机器上把mydan目录大包同步过去（记得排除掉/home/work/mydan/etc/agent/auth/*key 和日志文件），<br>然后运行/home/work/mydan/dan/bootstrap/bin/bootstrap  --install命令启动服务。<br>
+                             这模式下的agent安装需要用户自己处理，如果觉得安装麻烦可以安装<a href="/install_full.html" target="_blank">全量模式</a>，全量模式下agent的发布安装变的简单。<br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          

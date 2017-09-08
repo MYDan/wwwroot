@@ -3,11 +3,16 @@
                 
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">MYDan（蚂蚁蛋）运维助手</h1>
-                        <h1 class="page-subhead-line">蚂蚁蛋助手适用与以下四种模式(<b><a href="http://matrix.cpantesters.org/?dist=MYDan" target="_blank" >查看支持的操作系统</a></b>)</h1>
+                        <h1 class="page-head-line">MYDan（蚂蚁蛋）运维助手 </h1>
+                        <h1 class="page-subhead-line">蚂蚁蛋助手适用与以下四种模式(<b><a href="http://matrix.cpantesters.org/?dist=MYDan" target="_blank" >查看支持的操作系统</a></b>)
+                                <a href="install_quickstart.html" class="btn btn-success">Docker &amp; Quick Start</a>
+
+</h1>
                     </div>
                 </div>
                 
+
+
 
             <div class="row">
 		<div class="col-md-12 col-sm-12">
