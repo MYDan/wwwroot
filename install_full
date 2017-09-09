@@ -110,6 +110,9 @@
                             测试dashboard服务：<br>
                             /home/work/mydan/perl/bin/perl bin/app.pl  -p 5555<br><br>
                             
+			    启动mydan的bootstrap<br>
+			    /home/work/mydan/dan/bootstrap/bin/bootstrap  --install<br><br>
+
                             后台启动dashboard服务<br>
                             cp /home/work/mydan/dashboard/bin/dashboard.web.5555  /home/work/mydan/dan/bootstrap/exec/dashboard.web.5555<br><br>
                             
