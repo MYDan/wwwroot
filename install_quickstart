@@ -36,7 +36,7 @@
 			    -p 5555:5555 5555端口为dashboard端口<br>
 			    -p 8080:8080 8080端口为sso端口<br>
                             -e SMTP_ADDR=127.0.0.1 环境变量SMTP_ADDR，要配置一个可用的smtp地址，否则sso注册时无法发送邮件(如果只为测试可以不写，下文会提及)<br>
-			    可以添加  -v /my/path/auth:/home/work/mydan/etc/agent/auth 保存固定的公私钥<br>
+			    可以添加 -v /my/auth:/home/work/mydan/etc/agent/auth 保存固定的公私钥<br>
                             </p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                                   background-color: rgb(0,0,0);">
                              <font style="background-color: rgb(0, 0, 0);"
                                         color="#00ff00">
-			    [root@mydan tools]# curl -fsSL http://dockerip:5555/install/script/agent.sh|bash -x<br>
+			    [root@mydan tools]# curl -fsSL http://dockerip:5555/install/script/agent.sh | bash -x<br>
                              </font>
                              </div>
     
@@ -93,7 +93,7 @@
 			    注:<br>
 			    所有从dashboard中安装的agent，该dashboard中的/home/work/mydan/etc/agent/auth/mydan.pub会被带入到agent中，所以dashboard中的/home/work/mydan/etc/agent/auth/mydan.key将有其控制权限。<br>
                              如果在使用过程中不用细分每个人的权限，可以不继续下面的步骤<br>
-			    <img src="assets/img/quickstart/test1/vssh.png" height="466" width="1000" />
+			    <img src="assets/img/quickstart/test1/vssh.png" width="100%" />
                             </p>
                         </div>
                     </div>
@@ -128,8 +128,8 @@
                         </div>
                         <div class="panel-body">
                             <p>
-			    <img src="assets/img/quickstart/sso_zhuce/zhuce.png"  alt="注册页面"  height="466" width="1000" />
-			    正常情况下，会往注册邮箱里发一个修改密码的链接。如果docker启动时SMTP是错误的收不到邮件，可以在docker的输出日志中看到该链接,通过该链接来完成注册即可。日志格式: CHPASSWD: lijinfeng2011@gmail.com => http://sso.mydan.org:8080/chpasswd?key=bBpxgVAJG2ifZBTiXi4JCtU1XmMsj9r4qvwiwxa0ZuygrsHq0hCTDcHjBmbHN1CK <br>
+			    <img src="assets/img/quickstart/sso_zhuce/zhuce.png" width="100%" />
+			    正常情况下，会往注册邮箱里发一个修改密码的链接。如果docker启动时SMTP是错误的收不到邮件，可以在docker的输出日志中看到该链接,通过该链接来完成注册即可。日志格式: CHPASSWD: lijinfeng2011@gmail.com => http://sso.mydan.org:8080/chpasswd?key=key... <br>
 
                             </p>
                         </div>
@@ -153,7 +153,7 @@
                                                   background-color: rgb(0,0,0);">
                              <font style="background-color: rgb(0, 0, 0);"
                                         color="#00ff00">
-			    [root@mydan tools]# curl -fsSL http://dockerip:5555/install/script/client.sh|bash -x <br>
+			    [root@mydan tools]# curl -fsSL http://dockerip:5555/install/script/client.sh | bash -x <br>
                              </font>
                              </div>
  
@@ -206,7 +206,7 @@
                              </div>
  
                             iii.登陆dashboard保存公钥:<br>
-			    <img src="assets/img/quickstart/pzgrsy/savetoken.png" height="466" width="1000" />
+			    <img src="assets/img/quickstart/pzgrsy/savetoken.png" width="100%" />
 			    sso中的用户名和服务器上的用户名要一致，dashboard才可以正确加密，如果sso的用户名和服务器上的名不一致，请查看<a href="QandA.html">Q&A</a>进行配置
                             </p>
                         </div>
@@ -239,7 +239,7 @@
  
 			     <br>
 			     在dashboard中查看是否权限已经添加:<br>
-			    <img src="assets/img/quickstart/qxfp/myhost.png" height="466" width="1000" />
+			    <img src="assets/img/quickstart/qxfp/myhost.png" width="100%" />
                             </p>
                         </div>
                     </div>

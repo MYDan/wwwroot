@@ -18,9 +18,9 @@
                         <div class="panel-body">
                             <p>
                             可以通过扫描微信付款二维码进行打赏<br>
-<div align="center">
-			    <img src="assets/img/pay.jpeg"  alt="微信付款码"  height="366" width="366" />
-</div> 
+			    <div align="center">
+			    <img src="assets/img/pay.jpeg"  alt="微信付款码" width="266" />
+			    </div> 
                          <br>
                          </p>
                         </div>
