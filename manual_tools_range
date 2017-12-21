@@ -77,8 +77,8 @@
                            &nbsp;&nbsp;获取所有项目：　range　'{??==*==*==*}'<br>
                            &nbsp;&nbsp;获取所有结点：　range　'{==*==*??==*}'<br>
                            &nbsp;&nbsp;获取项目foo的所有机器：　range　'{==foo==*??==*}'<br>
-                           &nbsp;&nbsp;获取项目foo和bar中状态是1的机器：　range　'{{foo,bar}==*==*==1}'<br>
-                           &nbsp;&nbsp;获取foo项目状态不是1的机器：　range　'{foo==*==*!!1}'<br>
+                           &nbsp;&nbsp;获取项目foo和bar中状态是1的机器：　range　'{=={foo,bar}==*==*==1}'<br>
+                           &nbsp;&nbsp;获取foo项目状态不是1的机器：　range　'{==foo==*==*!!1}'<br>
                            
                            <br>
                            插件<br>
