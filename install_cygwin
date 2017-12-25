@@ -38,7 +38,7 @@
                         <div class="panel-body">
                             <p>
                             
-                            到Cynwin官网https://www.cygwin.com 下载最新的setup.exe程序。下载后双击打开<br>
+                            到Cygwin官网https://www.cygwin.com 下载最新的setup.exe程序。下载后双击打开<br>
 
                             1. 选择安装方式：Install from Internet <br>
                             2. 选择安装的路径，如: C:\cygwin-mydan <br>
