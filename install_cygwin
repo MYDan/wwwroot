@@ -107,7 +107,7 @@
                             <p>
 
                             和在linux上一样，在控制台中运行安装命令 curl -L install.mydan.org|bash <br><br>
-                            <a href="https://github.com/MYDan/perl/tree/master/data" > 点击查看已有的编译好的perl</a>,如果列表中没有合适您系统版本的编译好的perl，安装脚本会使用系统的perl，这样可能会话很长的时间，同时安装依赖模块的时候可能失败，如果您在新的系统版本中使用了mydan，欢迎上传您编译好的perl<br>
+                            <a href="https://github.com/MYDan/perl/tree/master/data" target="_blank" > 点击查看已有的编译好的perl</a>,如果列表中没有合适您系统版本的编译好的perl，安装脚本会使用系统的perl，这样可能会话很长的时间，同时安装依赖模块的时候可能失败，如果您在新的系统版本中使用了mydan，欢迎上传您编译好的perl<br>
                             </p>
                         </div>
                     </div>
