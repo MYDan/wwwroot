@@ -59,6 +59,9 @@
                             <li>
                                 <a href="install_full.html"></i>全量模式</a>
                             </li>
+                            <li>
+                                <a href="install_cygwin.html"></i>附1: window</a>
+                            </li>
                         </ul>
                     </li>
                     
