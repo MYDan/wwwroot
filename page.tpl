@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mydan.org 蚂蚁蛋运维助手</title>
 
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
