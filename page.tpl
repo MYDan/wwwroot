@@ -33,7 +33,7 @@
             </div>
             
             <div class="header-right">
-	            <a  href="http://www.mayidan.org"> <font color="#000">www.mayidan.org</font></a>        
+	            <a  href="http://www.mydan.org"> <font color="#000">www.mydan.org</font></a>        
 	            <a  href="https://github.com/mydan">  <i class="fa fa-github  fa-3x"></i> GitHub  </a>        
             </div>
         </nav>
@@ -41,96 +41,7 @@
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-                    <li>
-                        <a class="active-menu" href="index.html"></i>首页</a>
-                    </li>
-
-                    <li>
-                        <a href="#">安装手册<span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="install_quickstart.html"></i>Quick Start</a>
-                            </li>
-                            <li>
-                                <a href="install_box.html"></i>急救模式</a>
-                            </li>
-                            <li>
-                                <a href="install_dan.html"></i>简单模式</a>
-                            </li>
-                            <li>
-                                <a href="install_full.html"></i>全量模式</a>
-                            </li>
-                            <li>
-                                <a href="install_cygwin.html"></i>附1: window</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li>
-                        <a href="#">使用手册<span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level">
-                            <li>
-                                <a href="manual_tools.html"></i>tools</a>
-                            </li>
-                            <li>
-                                <a href="manual_agent.html"></i>agent</a>
-                            </li>
-                                                        
-                            <li>
-                                <a href="manual_dashboard.html"></i>dashboard</a>
-                            </li>
-                            <li>
-                                <a href="manual_notify.html"></i>notify</a>
-                            </li>
-                            <li>
-                                <a href="manual_oncall.html"></i>oncall</a>
-                            </li>
-                            <li>
-                                <a href="manual_subscribe.html"></i>subscribe</a>
-                            </li>
-                            <li>
-                                <a href="manual_deploy.html"></i>deploy</a>
-                            </li>
-
-                            <!--
-                            <li>
-                                <a href="null.html"></i>multicase</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>node</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>notify</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>oncall</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>project</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>subscribe</a>
-                            </li>
-                            <li>
-                                <a href="null.html"></i>sync</a>
-                            </li>
-                            -->
-
-                        </ul>
-                    </li>
-                    
-                     <li>
-                        <a href="QandA.html">Q&A</a>
-                     </li>
-
-                     <li>
-                        <a href="chat.html">讨论区</a>
-                     </li>
-                     <li>
-                        <a href="pay.html">打赏</a>
-                     </li>
-
+                    <li> <a class="active-menu" href="index.html"></i>首页</a> </li> 
                 </ul>
 
             </div>

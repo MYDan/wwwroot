@@ -2,6 +2,7 @@
 
 my $tpl = `cat page.tpl`;
 
+system "rm -rf _book;cd ../mydan-book && rm -rf _book&& gitbook build && cp -r _book ../wwwroot/";
 for my $file ( grep{ -f $_ }grep{/^[\w\d_]+$/}glob '*' )
 {
     print "build $file\n";
@@ -11,3 +12,5 @@ for my $file ( grep{ -f $_ }grep{/^[\w\d_]+$/}glob '*' )
     $tmp =~ s/PAGE_WRAPPER_CONTENT/$t/;
     print $H $tmp;
 }
+
+system 'zip wwwroot.zip * -r && python -m SimpleHTTPServer';
