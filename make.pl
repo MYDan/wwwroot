@@ -3,6 +3,7 @@
 my $tpl = `cat page.tpl`;
 
 system "rm -rf _book;cd ../mydan-book && rm -rf _book&& gitbook build && cp -r _book ../wwwroot/";
+system 'cp _book/assets/images/favicon.ico _book/gitbook/images/favicon.ico';
 for my $file ( grep{ -f $_ }grep{/^[\w\d_]+$/}glob '*' )
 {
     print "build $file\n";
