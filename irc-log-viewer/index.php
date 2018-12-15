@@ -78,6 +78,7 @@ if (!is_numeric($year)) {
 ?>
 <head>
 <title>MYDan IRC logs</title>
+<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
 <style>
 	@font-face {
 		font-family: 'Droid Sans Mono';
